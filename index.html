@@ -50,6 +50,13 @@
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
+        .leader-card-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-top-left-radius: 0.75rem; /* rounded-xl */
+            border-top-right-radius: 0.75rem; /* rounded-xl */
+        }
     </style>
 </head>
 <body class="text-slate-700">
@@ -63,7 +70,8 @@
             </a>
             <div class="hidden md:flex items-center space-x-6">
                 <a href="#profetas" class="hover:text-blue-600 transition-colors">Profetas</a>
-                <a href="#lideres" class="hover:text-blue-600 transition-colors">Líderes</a>
+                <a href="#lideres" class="hover:text-blue-600 transition-colors">Mestres</a>
+                <a href="#modernos" class="hover:text-blue-600 transition-colors">Modernos</a>
                 <a href="#timeline" class="hover:text-blue-600 transition-colors">Linha do Tempo</a>
                 <a href="#quiz" class="hover:text-blue-600 transition-colors">Quiz</a>
             </div>
@@ -74,7 +82,8 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
             <a href="#profetas" class="block py-2 hover:text-blue-600">Profetas</a>
-            <a href="#lideres" class="block py-2 hover:text-blue-600">Líderes</a>
+            <a href="#lideres" class="block py-2 hover:text-blue-600">Mestres</a>
+            <a href="#modernos" class="block py-2 hover:text-blue-600">Modernos</a>
             <a href="#timeline" class="block py-2 hover:text-blue-600">Linha do Tempo</a>
             <a href="#quiz" class="block py-2 hover:text-blue-600">Quiz</a>
         </div>
@@ -126,38 +135,114 @@
         <!-- Líderes Espirituais Section -->
         <section id="lideres" class="py-20 bg-white">
             <div class="container mx-auto px-6 text-center">
-                <h2 class="section-title">Líderes que Transformaram o Mundo</h2>
+                <h2 class="section-title">Grandes Mestres Espirituais</h2>
                 <p class="section-subtitle">
                     Conheça grandes mestres espirituais cujos ensinamentos e exemplos de vida ecoam através dos séculos, inspirando milhões de pessoas.
                 </p>
                 <div class="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Card Sidarta Gautama -->
                     <div class="group bg-slate-50 rounded-xl p-8 border border-slate-200 text-center flex flex-col items-center transition-all duration-300 hover:shadow-xl hover:border-blue-300">
-                        <img src="https://placehold.co/100x100/EBF4FF/1E40AF?text=Buda" class="rounded-full w-24 h-24 object-cover shadow-lg" alt="Imagem de Buda">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjYJ9u-sVBTYtr5JqK31rCdpC3lY2iZ-q38A&s" class="rounded-full w-24 h-24 object-cover shadow-lg" alt="Estátua de Buda" onerror="this.onerror=null;this.src='https://placehold.co/100x100/EBF4FF/1E40AF?text=Buda';">
                         <h3 class="text-2xl font-bold text-slate-800 mt-6">Sidarta Gautama (Buda)</h3>
                         <p class="text-blue-600 font-semibold">Budismo</p>
                         <p class="mt-4 text-slate-600 flex-grow">Nascido príncipe, renunciou à riqueza para buscar a iluminação. Após alcançá-la, dedicou o resto de sua vida a ensinar o caminho do "despertar".</p>
                     </div>
                     <!-- Card Confúcio -->
                     <div class="group bg-slate-50 rounded-xl p-8 border border-slate-200 text-center flex flex-col items-center transition-all duration-300 hover:shadow-xl hover:border-blue-300">
-                         <img src="https://placehold.co/100x100/EBF4FF/1E40AF?text=Confúcio" class="rounded-full w-24 h-24 object-cover shadow-lg" alt="Imagem de Confúcio">
+                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6d6Lg8a4Y0pZEyH2p3Y7a4j6n7tYI3xQ-zA&s" class="rounded-full w-24 h-24 object-cover shadow-lg" alt="Ilustração de Confúcio" onerror="this.onerror=null;this.src='https://placehold.co/100x100/EBF4FF/1E40AF?text=Confúcio';">
                         <h3 class="text-2xl font-bold text-slate-800 mt-6">Confúcio (Kung-Fu-Tsé)</h3>
                         <p class="text-blue-600 font-semibold">Confucionismo</p>
-                        <p class="mt-4 text-slate-600 flex-grow">Sua crença se baseava no resgate de valores perdidos, focando nas relações sociais, no respeito aos mais velhos e no comportamento exemplar, onde gestos valem mais que palavras.</p>
+                        <p class="mt-4 text-slate-600 flex-grow">Sua crença se baseava no resgate de valores perdidos, focando nas relações sociais, no respeito aos mais velhos e no comportamento exemplar.</p>
                     </div>
                     <!-- Card Shankara -->
                     <div class="group bg-slate-50 rounded-xl p-8 border border-slate-200 text-center flex flex-col items-center transition-all duration-300 hover:shadow-xl hover:border-blue-300">
-                         <img src="https://placehold.co/100x100/EBF4FF/1E40AF?text=Shankara" class="rounded-full w-24 h-24 object-cover shadow-lg" alt="Imagem de Shankara">
+                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6f8ZlW5vR9o7E8u5m4P1y2wT9X4j2s0K0g&s" class="rounded-full w-24 h-24 object-cover shadow-lg" alt="Pintura de Shankara" onerror="this.onerror=null;this.src='https://placehold.co/100x100/EBF4FF/1E40AF?text=Shankara';">
                         <h3 class="text-2xl font-bold text-slate-800 mt-6">Shankara</h3>
                         <p class="text-blue-600 font-semibold">Hinduísmo</p>
-                        <p class="mt-4 text-slate-600 flex-grow">Ensinou que a verdade se conquista pela meditação sobre o amor divino. Denunciou o opressivo sistema de castas indiano, defendendo o altruísmo como caminho para a liberdade.</p>
+                        <p class="mt-4 text-slate-600 flex-grow">Ensinou que a verdade se conquista pela meditação sobre o amor divino e denunciou o opressivo sistema de castas indiano.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Líderes Modernos Section -->
+        <section id="modernos" class="py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="section-title">Inspirações da História Recente</h2>
+                <p class="section-subtitle">
+                    De ativistas a religiosos, estas personalidades dedicaram suas vidas à luta por direitos humanos, justiça social e pela preservação do planeta.
+                </p>
+                <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                    <!-- Card Martin Luther King Jr. -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                        <img class="leader-card-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7g_QYt-BGW-fC-pT9j9D9n9r8c7Y_K6XmYg&s" alt="Foto de Martin Luther King Jr." onerror="this.onerror=null;this.src='https://placehold.co/300x180/EBF4FF/1E40AF?text=MLK';">
+                        <div class="p-6">
+                            <h3 class="font-bold text-lg text-slate-800">Martin Luther King Jr.</h3>
+                            <p class="text-sm text-slate-600 mt-1">Pastor e ativista que liderou o movimento pelos direitos civis nos EUA com base na não violência.</p>
+                        </div>
+                    </div>
+                     <!-- Card Mahatma Gandhi -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                        <img class="leader-card-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_z5J9Q3j3F6n6R0m3e2E5y9B8c7Z9X9Z-w&s" alt="Foto de Mahatma Gandhi" onerror="this.onerror=null;this.src='https://placehold.co/300x180/EBF4FF/1E40AF?text=Gandhi';">
+                        <div class="p-6">
+                            <h3 class="font-bold text-lg text-slate-800">Mahatma Gandhi</h3>
+                            <p class="text-sm text-slate-600 mt-1">Líder da independência da Índia, defendeu o princípio da não agressão como forma de resistência.</p>
+                        </div>
+                    </div>
+                     <!-- Card Papa Francisco -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                        <img class="leader-card-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9f8d_U8o5r7J2l-J8a1A1S1t0X6k4q2B-Q&s" alt="Foto do Papa Francisco" onerror="this.onerror=null;this.src='https://placehold.co/300x180/EBF4FF/1E40AF?text=Papa';">
+                        <div class="p-6">
+                            <h3 class="font-bold text-lg text-slate-800">Papa Francisco</h3>
+                            <p class="text-sm text-slate-600 mt-1">Dedica-se à defesa dos direitos humanos, do meio ambiente e ao acolhimento de refugiados.</p>
+                        </div>
+                    </div>
+                     <!-- Card Chico Xavier -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                        <img class="leader-card-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz6-J8L7k8N0B_qW4I_X1r9Y5m3S_w3J3c9w&s" alt="Foto de Chico Xavier" onerror="this.onerror=null;this.src='https://placehold.co/300x180/EBF4FF/1E40AF?text=Chico';">
+                        <div class="p-6">
+                            <h3 class="font-bold text-lg text-slate-800">Chico Xavier</h3>
+                            <p class="text-sm text-slate-600 mt-1">Um dos médiuns mais importantes do Espiritismo, tinha como missão ajudar os mais humildes.</p>
+                        </div>
+                    </div>
+                     <!-- Card Mãe Menininha -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                        <img class="leader-card-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6Z8f6B4uX2d8L1m9k7Y6m9u3T8x7R0s3R-g&s" alt="Foto de Mãe Menininha do Gantois" onerror="this.onerror=null;this.src='https://placehold.co/300x180/EBF4FF/1E40AF?text=Mãe';">
+                        <div class="p-6">
+                            <h3 class="font-bold text-lg text-slate-800">Mãe Menininha</h3>
+                            <p class="text-sm text-slate-600 mt-1">Famosa ialorixá do Brasil, enfrentou o preconceito e a discriminação de forma corajosa.</p>
+                        </div>
+                    </div>
+                     <!-- Card Wangari Maathai -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                        <img class="leader-card-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3V-J6B_w0H5n-3k6N-r7p9J2F8k1U9m8v8g&s" alt="Foto de Wangari Maathai" onerror="this.onerror=null;this.src='https://placehold.co/300x180/EBF4FF/1E40AF?text=Wangari';">
+                        <div class="p-6">
+                            <h3 class="font-bold text-lg text-slate-800">Wangari Maathai</h3>
+                            <p class="text-sm text-slate-600 mt-1">Primeira africana a ganhar o Nobel da Paz por sua luta pela democracia e meio ambiente.</p>
+                        </div>
+                    </div>
+                     <!-- Card Dorothy Stang -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                        <img class="leader-card-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx5n-0H4C7y7n-5p8V-6T7e9V0v2Y_k8I8fA&s" alt="Foto de Dorothy Stang" onerror="this.onerror=null;this.src='https://placehold.co/300x180/EBF4FF/1E40AF?text=Dorothy';">
+                        <div class="p-6">
+                            <h3 class="font-bold text-lg text-slate-800">Dorothy Stang</h3>
+                            <p class="text-sm text-slate-600 mt-1">Missionária que defendeu os direitos dos camponeses e a proteção da Floresta Amazônica.</p>
+                        </div>
+                    </div>
+                     <!-- Card Betinho -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                        <img class="leader-card-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy-5F7b2T1S6p9Y7n9T4r6A9o2b2M_j9X8pA&s" alt="Foto de Herbert de Souza (Betinho)" onerror="this.onerror=null;this.src='https://placehold.co/300x180/EBF4FF/1E40AF?text=Betinho';">
+                        <div class="p-6">
+                            <h3 class="font-bold text-lg text-slate-800">Herbert de Souza</h3>
+                            <p class="text-sm text-slate-600 mt-1">Conhecido como Betinho, foi um símbolo da luta contra a fome e a miséria no Brasil.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Timeline Section -->
-        <section id="timeline" class="py-20">
+        <section id="timeline" class="py-20 bg-white">
             <div class="container mx-auto px-6">
                 <h2 class="section-title text-center">Lutas Recentes por um Mundo Melhor</h2>
                 <p class="section-subtitle text-center">
@@ -185,7 +270,7 @@
                         <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
                             <p class="text-sm font-medium text-blue-600">1929 - 1968</p>
                             <h3 class="font-bold text-gray-800 text-lg">Martin Luther King Jr.</h3>
-                            <p class="text-sm leading-snug tracking-wide text-gray-600">Lutou pela igualdade racial nos EUA com base na não violência e no amor ao próximo.</p>
+                            <p class="text-sm leading-snug tracking-wide text-gray-600">Lutou pela igualdade racial nos EUA com base na não violência e do amor ao próximo.</p>
                         </div>
                     </div>
                     <!-- Timeline Item -->
@@ -286,6 +371,7 @@
             currentQuestionIndex = 0;
             score = 0;
             quizResult.innerHTML = '';
+            quizResult.className = 'mt-8 text-2xl font-bold';
             restartQuizBtn.classList.add('hidden');
             showQuestion();
         }
@@ -324,7 +410,7 @@
             allButtons.forEach(btn => {
                 btn.disabled = true; // Desabilita todos os botões
                 if (btn.textContent === correctAnswer) {
-                    btn.classList.remove('bg-slate-600');
+                    btn.classList.remove('bg-slate-600', 'hover:bg-blue-600');
                     btn.classList.add('bg-green-500'); // Resposta correta em verde
                 }
             });
@@ -332,7 +418,7 @@
             if (selectedOption === correctAnswer) {
                 score++;
             } else {
-                button.classList.remove('bg-slate-600');
+                button.classList.remove('bg-slate-600', 'hover:bg-blue-600');
                 button.classList.add('bg-red-500'); // Resposta incorreta em vermelho
             }
 
@@ -349,6 +435,7 @@
         function showResult() {
             quizContainer.innerHTML = '';
             quizResult.innerHTML = `Você acertou ${score} de ${questions.length} perguntas!`;
+            quizResult.classList.remove('text-green-400', 'text-yellow-400'); // Limpa cores anteriores
             if (score > 2) {
                  quizResult.innerHTML += '<br>Parabéns! Excelente conhecimento! 🌟';
                  quizResult.classList.add('text-green-400');
