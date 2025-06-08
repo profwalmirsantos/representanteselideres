@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Líderes e Tradições Religiosas</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web@2.0.3"></script>
+
+    <style>
+        /* Custom styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Cor de fundo suave (slate-50) */
+        }
+        .section-title {
+            font-weight: 700;
+            font-size: 2.25rem; /* text-4xl */
+            letter-spacing: -0.025em;
+            color: #1e293b; /* slate-800 */
+        }
+        .section-subtitle {
+            font-size: 1.125rem; /* text-lg */
+            color: #475569; /* slate-600 */
+            max-width: 60ch;
+            margin: 1rem auto 0;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background-color: #cbd5e1; /* slate-300 */
+            border-radius: 2px;
+        }
+        /* Efeito de destaque para o card do quiz */
+        .quiz-option:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="text-slate-700">
+
+    <!-- Header / Navbar -->
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-slate-800 flex items-center gap-2">
+                <i class="ph ph-sparkle text-blue-600 text-2xl"></i>
+                Lideranças Espirituais
+            </a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#profetas" class="hover:text-blue-600 transition-colors">Profetas</a>
+                <a href="#lideres" class="hover:text-blue-600 transition-colors">Líderes</a>
+                <a href="#timeline" class="hover:text-blue-600 transition-colors">Linha do Tempo</a>
+                <a href="#quiz" class="hover:text-blue-600 transition-colors">Quiz</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden">
+                <i class="ph ph-list text-3xl"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#profetas" class="block py-2 hover:text-blue-600">Profetas</a>
+            <a href="#lideres" class="block py-2 hover:text-blue-600">Líderes</a>
+            <a href="#timeline" class="block py-2 hover:text-blue-600">Linha do Tempo</a>
+            <a href="#quiz" class="block py-2 hover:text-blue-600">Quiz</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="py-20 md:py-32 text-center bg-white">
+            <div class="container mx-auto px-6">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-slate-800 leading-tight">
+                    Um Olhar Sobre a Fé e a Ação
+                </h1>
+                <p class="mt-6 text-lg md:text-xl text-slate-600 max-w-3xl mx-auto">
+                    Explore a história de líderes religiosos e espirituais que, com suas ações e ensinamentos, inspiraram a humanidade a buscar justiça, paz e solidariedade.
+                </p>
+                <a href="#profetas" class="mt-10 inline-block bg-blue-600 text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-blue-700 transition-all transform hover:scale-105">
+                    Começar a Jornada
+                </a>
+            </div>
+        </section>
+
+        <!-- Profetas Section -->
+        <section id="profetas" class="py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="section-title">Profetas: As Vozes da Mudança</h2>
+                <p class="section-subtitle">
+                    Longe de serem adivinhos, os profetas são considerados porta-vozes do divino, com a missão de denunciar injustiças e anunciar mensagens de esperança.
+                </p>
+                <div class="mt-12 grid md:grid-cols-3 gap-8 text-left">
+                    <div class="bg-white p-8 rounded-xl shadow-md border border-slate-200">
+                        <i class="ph-fill ph-user-speaker text-4xl text-blue-500 mb-4"></i>
+                        <h3 class="text-xl font-bold text-slate-800">O que é um Profeta?</h3>
+                        <p class="mt-2">Uma pessoa escolhida para transmitir a vontade divina, incentivando a humanidade a viver em retidão e justiça.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-md border border-slate-200">
+                        <i class="ph-fill ph-star-of-david text-4xl text-blue-500 mb-4"></i>
+                        <h3 class="text-xl font-bold text-slate-800">Religiões Proféticas</h3>
+                        <p class="mt-2">O Judaísmo, o Cristianismo e o Islamismo são chamadas de religiões proféticas, pois a figura de um profeta é central em sua origem e história.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-md border border-slate-200">
+                        <i class="ph-fill ph-scales text-4xl text-blue-500 mb-4"></i>
+                        <h3 class="text-xl font-bold text-slate-800">Exemplos Marcantes</h3>
+                        <p class="mt-2">No Islamismo, Maomé é o profeta definitivo. Na tradição judaico-cristã, João Batista é um dos mais importantes, conhecido por preparar os caminhos para Jesus.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Líderes Espirituais Section -->
+        <section id="lideres" class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="section-title">Líderes que Transformaram o Mundo</h2>
+                <p class="section-subtitle">
+                    Conheça grandes mestres espirituais cujos ensinamentos e exemplos de vida ecoam através dos séculos, inspirando milhões de pessoas.
+                </p>
+                <div class="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Card Sidarta Gautama -->
+                    <div class="group bg-slate-50 rounded-xl p-8 border border-slate-200 text-center flex flex-col items-center transition-all duration-300 hover:shadow-xl hover:border-blue-300">
+                        <img src="https://placehold.co/100x100/EBF4FF/1E40AF?text=Buda" class="rounded-full w-24 h-24 object-cover shadow-lg" alt="Imagem de Buda">
+                        <h3 class="text-2xl font-bold text-slate-800 mt-6">Sidarta Gautama (Buda)</h3>
+                        <p class="text-blue-600 font-semibold">Budismo</p>
+                        <p class="mt-4 text-slate-600 flex-grow">Nascido príncipe, renunciou à riqueza para buscar a iluminação. Após alcançá-la, dedicou o resto de sua vida a ensinar o caminho do "despertar".</p>
+                    </div>
+                    <!-- Card Confúcio -->
+                    <div class="group bg-slate-50 rounded-xl p-8 border border-slate-200 text-center flex flex-col items-center transition-all duration-300 hover:shadow-xl hover:border-blue-300">
+                         <img src="https://placehold.co/100x100/EBF4FF/1E40AF?text=Confúcio" class="rounded-full w-24 h-24 object-cover shadow-lg" alt="Imagem de Confúcio">
+                        <h3 class="text-2xl font-bold text-slate-800 mt-6">Confúcio (Kung-Fu-Tsé)</h3>
+                        <p class="text-blue-600 font-semibold">Confucionismo</p>
+                        <p class="mt-4 text-slate-600 flex-grow">Sua crença se baseava no resgate de valores perdidos, focando nas relações sociais, no respeito aos mais velhos e no comportamento exemplar, onde gestos valem mais que palavras.</p>
+                    </div>
+                    <!-- Card Shankara -->
+                    <div class="group bg-slate-50 rounded-xl p-8 border border-slate-200 text-center flex flex-col items-center transition-all duration-300 hover:shadow-xl hover:border-blue-300">
+                         <img src="https://placehold.co/100x100/EBF4FF/1E40AF?text=Shankara" class="rounded-full w-24 h-24 object-cover shadow-lg" alt="Imagem de Shankara">
+                        <h3 class="text-2xl font-bold text-slate-800 mt-6">Shankara</h3>
+                        <p class="text-blue-600 font-semibold">Hinduísmo</p>
+                        <p class="mt-4 text-slate-600 flex-grow">Ensinou que a verdade se conquista pela meditação sobre o amor divino. Denunciou o opressivo sistema de castas indiano, defendendo o altruísmo como caminho para a liberdade.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <section id="timeline" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title text-center">Lutas Recentes por um Mundo Melhor</h2>
+                <p class="section-subtitle text-center">
+                    Na história recente, diversas lideranças, religiosas ou não, dedicaram suas vidas contra a opressão e a favor da dignidade humana.
+                </p>
+                <div class="relative mt-16 max-w-4xl mx-auto timeline">
+                    <!-- Timeline Item -->
+                    <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                        <div class="order-1 w-5/12"></div>
+                        <div class="z-20 flex items-center order-1 bg-blue-600 shadow-xl w-12 h-12 rounded-full">
+                            <i class="ph-fill ph-gavel text-white mx-auto text-2xl"></i>
+                        </div>
+                        <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                            <p class="text-sm font-medium text-blue-600">1891</p>
+                            <h3 class="font-bold text-gray-800 text-lg">Papa Leão XIII</h3>
+                            <p class="text-sm leading-snug tracking-wide text-gray-600">Defendeu os direitos dos trabalhadores de se organizarem em sindicatos.</p>
+                        </div>
+                    </div>
+                    <!-- Timeline Item -->
+                    <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                        <div class="order-1 w-5/12"></div>
+                         <div class="z-20 flex items-center order-1 bg-blue-600 shadow-xl w-12 h-12 rounded-full">
+                            <i class="ph-fill ph-peace text-white mx-auto text-2xl"></i>
+                        </div>
+                        <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                            <p class="text-sm font-medium text-blue-600">1929 - 1968</p>
+                            <h3 class="font-bold text-gray-800 text-lg">Martin Luther King Jr.</h3>
+                            <p class="text-sm leading-snug tracking-wide text-gray-600">Lutou pela igualdade racial nos EUA com base na não violência e no amor ao próximo.</p>
+                        </div>
+                    </div>
+                    <!-- Timeline Item -->
+                    <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                        <div class="order-1 w-5/12"></div>
+                         <div class="z-20 flex items-center order-1 bg-blue-600 shadow-xl w-12 h-12 rounded-full">
+                            <i class="ph-fill ph-first-aid-kit text-white mx-auto text-2xl"></i>
+                        </div>
+                        <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                            <p class="text-sm font-medium text-blue-600">1935 - 1997</p>
+                            <h3 class="font-bold text-gray-800 text-lg">Herbert de Souza (Betinho)</h3>
+                            <p class="text-sm leading-snug tracking-wide text-gray-600">Símbolo da luta contra a fome no Brasil, fundou a ONG Ação da Cidadania.</p>
+                        </div>
+                    </div>
+                     <!-- Timeline Item -->
+                    <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                        <div class="order-1 w-5/12"></div>
+                         <div class="z-20 flex items-center order-1 bg-blue-600 shadow-xl w-12 h-12 rounded-full">
+                            <i class="ph-fill ph-tree-evergreen text-white mx-auto text-2xl"></i>
+                        </div>
+                        <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                            <p class="text-sm font-medium text-blue-600">1940 - 2011</p>
+                            <h3 class="font-bold text-gray-800 text-lg">Wangari Maathai</h3>
+                            <p class="text-sm leading-snug tracking-wide text-gray-600">Primeira africana a ganhar o Nobel da Paz, por sua luta pelo meio ambiente e direitos das mulheres.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quiz Section -->
+        <section id="quiz" class="py-20 bg-slate-800 text-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="section-title text-white">Teste Seus Conhecimentos</h2>
+                <p class="section-subtitle !text-slate-300">
+                    Vamos ver o que você aprendeu sobre essas incríveis lideranças. Escolha a alternativa correta!
+                </p>
+                <div id="quiz-container" class="mt-12 max-w-2xl mx-auto text-left">
+                    <!-- As perguntas serão inseridas aqui pelo JavaScript -->
+                </div>
+                <div id="quiz-result" class="mt-8 text-2xl font-bold"></div>
+                <button id="restart-quiz-btn" class="hidden mt-4 bg-blue-600 text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-blue-700 transition-all">
+                    Tentar Novamente
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-10">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Website Educacional. Criado para facilitar o aprendizado.</p>
+            <p class="text-sm mt-2">Baseado no material "As tradições religiosas: representantes e líderes".</p>
+        </div>
+    </footer>
+
+    <script>
+        // Lógica do Menu Mobile
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Lógica do Quiz
+        const quizContainer = document.getElementById('quiz-container');
+        const quizResult = document.getElementById('quiz-result');
+        const restartQuizBtn = document.getElementById('restart-quiz-btn');
+
+        const questions = [
+            {
+                question: "1. Qual líder religioso se opôs ao sistema de castas na Índia, ensinando que a liberdade se dá na prática do altruísmo?",
+                options: ["Confúcio", "Shankara", "Sidarta Gautama"],
+                answer: "Shankara"
+            },
+            {
+                question: "2. Martin Luther King Jr. baseava sua luta pelos direitos civis em qual princípio fundamental?",
+                options: ["Luta armada", "Ação política exclusiva", "Não violência e amor ao próximo"],
+                answer: "Não violência e amor ao próximo"
+            },
+            {
+                question: "3. Quem foi a primeira mulher africana a receber o Prêmio Nobel da Paz por sua luta pelo meio ambiente e direitos das mulheres?",
+                options: ["Dorothy Stang", "Mãe Menininha do Gantois", "Wangari Maathai"],
+                answer: "Wangari Maathai"
+            },
+            {
+                question: "4. Qual o nome do fundador do Instituto dos Irmãos Maristas, focado na educação de jovens em vulnerabilidade?",
+                options: ["Chico Xavier", "Marcelino Champagnat", "Herbert de Souza (Betinho)"],
+                answer: "Marcelino Champagnat"
+            }
+        ];
+
+        let currentQuestionIndex = 0;
+        let score = 0;
+
+        function loadQuiz() {
+            currentQuestionIndex = 0;
+            score = 0;
+            quizResult.innerHTML = '';
+            restartQuizBtn.classList.add('hidden');
+            showQuestion();
+        }
+
+        function showQuestion() {
+            quizContainer.innerHTML = ''; // Limpa o container
+            const currentQuestion = questions[currentQuestionIndex];
+            
+            const questionElement = document.createElement('div');
+            questionElement.className = 'bg-slate-700 p-8 rounded-lg shadow-lg';
+            
+            const questionText = document.createElement('h3');
+            questionText.className = 'text-xl font-semibold mb-6';
+            questionText.textContent = currentQuestion.question;
+            questionElement.appendChild(questionText);
+            
+            const optionsList = document.createElement('div');
+            optionsList.className = 'space-y-4';
+            
+            currentQuestion.options.forEach(option => {
+                const button = document.createElement('button');
+                button.textContent = option;
+                button.className = 'w-full text-left bg-slate-600 p-4 rounded-lg hover:bg-blue-600 transition-colors duration-200 quiz-option';
+                button.onclick = () => selectAnswer(option, button);
+                optionsList.appendChild(button);
+            });
+            
+            questionElement.appendChild(optionsList);
+            quizContainer.appendChild(questionElement);
+        }
+
+        function selectAnswer(selectedOption, button) {
+            const correctAnswer = questions[currentQuestionIndex].answer;
+            const allButtons = quizContainer.querySelectorAll('button');
+
+            allButtons.forEach(btn => {
+                btn.disabled = true; // Desabilita todos os botões
+                if (btn.textContent === correctAnswer) {
+                    btn.classList.remove('bg-slate-600');
+                    btn.classList.add('bg-green-500'); // Resposta correta em verde
+                }
+            });
+
+            if (selectedOption === correctAnswer) {
+                score++;
+            } else {
+                button.classList.remove('bg-slate-600');
+                button.classList.add('bg-red-500'); // Resposta incorreta em vermelho
+            }
+
+            setTimeout(() => {
+                currentQuestionIndex++;
+                if (currentQuestionIndex < questions.length) {
+                    showQuestion();
+                } else {
+                    showResult();
+                }
+            }, 1500); // Espera 1.5s antes de ir para a próxima pergunta
+        }
+
+        function showResult() {
+            quizContainer.innerHTML = '';
+            quizResult.innerHTML = `Você acertou ${score} de ${questions.length} perguntas!`;
+            if (score > 2) {
+                 quizResult.innerHTML += '<br>Parabéns! Excelente conhecimento! 🌟';
+                 quizResult.classList.add('text-green-400');
+            } else {
+                 quizResult.innerHTML += '<br>Continue estudando para aprender mais! 💪';
+                 quizResult.classList.add('text-yellow-400');
+            }
+            restartQuizBtn.classList.remove('hidden');
+        }
+
+        restartQuizBtn.addEventListener('click', loadQuiz);
+
+        // Inicia o quiz quando a página carregar
+        window.onload = loadQuiz;
+    </script>
+</body>
+</html>
